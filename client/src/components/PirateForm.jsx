@@ -151,10 +151,10 @@ const PirateForm = (props) => {
                             />
                         </div>
                        {
-                        err[0] === '' && err[1] === '' ? 
-                        <button type="submit" className="btn btn-light mt-3 border border-1 border-dark">{buttonName}</button>
-                        : 
+                        initialData.name == '' && err[0] !== '' && err[1] !== '' ? 
                         <button type="submit" className="btn btn-light mt-3 border border-1 border-dark" disabled>{buttonName}</button>
+                        : 
+                        <button type="submit" className="btn btn-light mt-3 border border-1 border-dark">{buttonName}</button>
                         }
                     </div>
                 </div>
